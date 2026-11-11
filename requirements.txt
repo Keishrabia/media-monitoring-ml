@@ -1,0 +1,14 @@
+pandas>=2.0
+numpy>=1.26
+# Versi dikunci agar sama dengan yang dipakai melatih deploy_models/ (lihat deploy_models/VERSIONS.txt).
+# Jika kamu melatih ulang dengan versi lain, samakan angka ini dengan isi VERSIONS.txt.
+scikit-learn==1.9.1
+matplotlib>=3.8
+seaborn>=0.13
+joblib>=1.3
+openpyxl>=3.1
+streamlit>=1.35
+
+# Opsional (hanya untuk src/train_indobert.py, disarankan di Google Colab GPU)
+# transformers>=4.40
+# torch>=2.2

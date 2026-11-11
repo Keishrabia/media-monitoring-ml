@@ -1,0 +1,77 @@
+{
+  "task": "tone",
+  "data": "/home/claude/media-monitoring-ml/data/processed/clean.csv",
+  "n_train": 665,
+  "n_test": 167,
+  "classes": [
+    "Dukungan",
+    "Informatif",
+    "Inspiratif",
+    "Kritik",
+    "Netral",
+    "Provokatif/Alarmis"
+  ],
+  "cv_macro_f1": {
+    "baseline_majority": {
+      "mean": 0.0857,
+      "std": 0.0
+    },
+    "logreg": {
+      "mean": 0.3382,
+      "std": 0.0274
+    },
+    "linear_svc": {
+      "mean": 0.3405,
+      "std": 0.0326
+    },
+    "complement_nb": {
+      "mean": 0.3179,
+      "std": 0.0245
+    }
+  },
+  "best_model": "linear_svc",
+  "test": {
+    "accuracy": 0.5928,
+    "macro_f1": 0.4591,
+    "weighted_f1": 0.5872,
+    "baseline_macro_f1": 0.0859,
+    "per_class": {
+      "Dukungan": {
+        "precision": 0.6552,
+        "recall": 0.6552,
+        "f1-score": 0.6552,
+        "support": 58.0
+      },
+      "Informatif": {
+        "precision": 0.4444,
+        "recall": 0.4,
+        "f1-score": 0.4211,
+        "support": 10.0
+      },
+      "Inspiratif": {
+        "precision": 0.5,
+        "recall": 0.5714,
+        "f1-score": 0.5333,
+        "support": 35.0
+      },
+      "Kritik": {
+        "precision": 0.5385,
+        "recall": 0.4667,
+        "f1-score": 0.5,
+        "support": 15.0
+      },
+      "Netral": {
+        "precision": 0.6383,
+        "recall": 0.6522,
+        "f1-score": 0.6452,
+        "support": 46.0
+      },
+      "Provokatif/Alarmis": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      }
+    }
+  }
+}

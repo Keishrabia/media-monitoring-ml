@@ -1,0 +1,56 @@
+{
+  "task": "sentiment",
+  "data": "/home/claude/media-monitoring-ml/data/processed/clean.csv",
+  "n_train": 666,
+  "n_test": 167,
+  "classes": [
+    "Negatif",
+    "Netral",
+    "Positif"
+  ],
+  "cv_macro_f1": {
+    "baseline_majority": {
+      "mean": 0.2816,
+      "std": 0.0006
+    },
+    "logreg": {
+      "mean": 0.6334,
+      "std": 0.045
+    },
+    "linear_svc": {
+      "mean": 0.61,
+      "std": 0.0407
+    },
+    "complement_nb": {
+      "mean": 0.4407,
+      "std": 0.0315
+    }
+  },
+  "best_model": "logreg",
+  "test": {
+    "accuracy": 0.8144,
+    "macro_f1": 0.5935,
+    "weighted_f1": 0.78,
+    "baseline_macro_f1": 0.2814,
+    "per_class": {
+      "Negatif": {
+        "precision": 0.7391,
+        "recall": 0.7391,
+        "f1-score": 0.7391,
+        "support": 23.0
+      },
+      "Netral": {
+        "precision": 0.2857,
+        "recall": 0.0909,
+        "f1-score": 0.1379,
+        "support": 22.0
+      },
+      "Positif": {
+        "precision": 0.854,
+        "recall": 0.959,
+        "f1-score": 0.9035,
+        "support": 122.0
+      }
+    }
+  }
+}

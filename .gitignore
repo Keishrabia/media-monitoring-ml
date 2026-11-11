@@ -1,0 +1,25 @@
+# === DATA: jangan pernah di-push ===
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.xlsx
+*.xls
+*.csv
+# kecuali sampel sintetis (data fiktif)
+!data/sample/*.csv
+
+# model & output yang berisi kosakata/judul asli
+models/*
+!models/.gitkeep
+outputs_private/*
+!outputs_private/.gitkeep
+
+# Python / editor
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.vscode/
+.env
