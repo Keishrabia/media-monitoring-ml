@@ -12,7 +12,7 @@ setelah cleaning).
 
 ## Demo
 
-🔗 **Demo online:** _(isi link Streamlit setelah deploy)_
+🔗 **Demo online:** _(https://media-monitoring-ml-dfqo5bnr5x6psskbunf8kr.streamlit.app/)_
 
 Tempel judul berita, lalu aplikasi menampilkan prediksi sentimen, tone, dan topik beserta tingkat keyakinannya.
 Dashboard juga menampilkan baseline proyeksi jumlah berita media UIN Jakarta untuk 1–6 bulan ke depan,
